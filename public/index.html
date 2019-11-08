@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Transcorp</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="assets/js/index.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
 
 </head>
 
@@ -45,11 +48,18 @@
                     <div class="booking-div-1">
                         <div class="booking-1-1">
                             <p class="p1">CHECK IN</p>
-                            <p><span class="p2">24</span> <span class="p3">/JUNE</span></p>
+                            <div>
+                                <p><span class="p2">24</span> <span class="p3">/JUNE</span></p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+
                         </div>
                         <div class="booking-1-1">
                             <p class="p1">CHECK OUT</p>
-                            <p><span class="p2">29</span><span class="p3">/JUNE</span></p>
+                           <div>
+                                <p><span class="p2">29</span><span class="p3">/JUNE</span></p>
+                                <i class="fas fa-chevron-down"></i>
+                           </div>
                         </div>
                         <div class="booking-1-1">
                             <p class="p1">GUESTS</p>
@@ -161,7 +171,7 @@
                         <div class="blogdetails">
                             <p class="p1">April 10th, 2018</p>
                             <p class="p2">Five reasons to stay at the beautiful Transcorp Hotel</p>
-                            <p class="p3">Continue</p>
+                            <p class="p3" style="color: black;">Continue <i class="fas fa-arrow-right"></i></p>
                         </div>
                     </div>
                     <div class="single-blog-stack">
@@ -171,7 +181,7 @@
                         <div class="blogdetails">
                             <p class="p1">April 10th, 2018</p>
                             <p class="p2">Five reasons to stay at the beautiful Transcorp Hotel</p>
-                            <p class="p3">Continue</p>
+                            <p class="p3">Continue <i class="fas fa-arrow-right"></i></p>
                         </div>
                     </div>
                     <div class="single-blog-stack">
@@ -181,15 +191,105 @@
                         <div class="blogdetails">
                             <p class="p1">April 10th, 2018</p>
                             <p class="p2">Five reasons to stay at the beautiful Transcorp Hotel</p>
-                            <p class="p3">Continue</p>
+                            <p class="p3">Continue <i class="fas fa-arrow-right"></i></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="directions">
+            <div id="map" class="map"></div>
+            <div class="mapdetails">
 
+                <div class="dd1">
+                    <p class="p1">DISCOVER OUR ROOMS</p>
+                    <p class="p2">Luxury interior</p>
+                </div>
+                <div class="dd2">
+                    <p class="p1"><span>Abuja,</span> <span style="color: #9b9b9b;">Nigeria</span></p>
+                    <p class="p2">Address: 1 Aguiyi Ironsi St, Abuja 900001, Nigeria</p>
+                    <p class="p3">Email: info@transcorphotelsplc.com</p>
+                </div>
+                <div class="dd3">
+                    <p class="p1">Call directly;</p>
+                    <h3 class="p2">+234 708 060 3000</h3>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="inner-footer">
+                <div class="footer-top">
+                    <div class="ftopcont">
+                        <p>Site Map</p>
+                        <p>Terms and Condition</p>
+                        <p>Privacy Policy</p>
+                        <p>Help</p>
+                        <p>Affiliate</p>
+                    </div>
+                    <div class="ftopcont">
+                        <p>Our Location</p>
+                        <p>Career</p>
+                        <p>About</p>
+                        <p>Contact</p>
+                    </div>
+                    <div class="ftopcont">
+                        <p>FAQs</p>
+                        <p>Blog</p>
+                        <p>Car Blog</p>
+                        <p>Location</p>
+                        <p>Press</p>
+                    </div>
+                    <div class="ftopcont">
+                        <p>Sign up to get our newsletter</p>
+                        <div class="inputdiv">
+                            <input style="background: none;border: none;" type="text" placeholder="Your email….">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-inner">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 </body>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {
+            lat: -25.344,
+            lng: 131.036
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
 
 </html>
