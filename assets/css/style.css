@@ -323,5 +323,145 @@ body {
   background-image: url("../img/aboutusbackgroud.png");
   background-size: cover;
   background-repeat: round;
-  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.testimony-section{
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+.testimony-section-inner{
+  margin-top: 175px;
+  background: white;
+  width: 70%;
+  margin-top: 175px;
+  padding: 5%;
+}
+
+.testify{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.testify .p1{
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 4.94px;
+  text-align: justify;
+  color: #9b9b9b;
+}
+
+.testify .h3{
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.12px;
+  text-align: center;
+  color: #000000;
+}
+
+.testify .p2{
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.46;
+  letter-spacing: 1.41px;
+  text-align: center;
+  color: #000000;
+}
+
+.testifiername{
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #000000;
+}
+
+.testifyimage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-part h3{
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.12px;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 38px;
+}
+
+.blog-part{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-stack{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.single-blog-stack{
+  background: white;
+  width: 32%;
+}
+
+.blogimage img{
+  min-width:100%;
+}
+
+.blogdetails{
+  padding-left: 20px;
+}
+.blogdetails .p1{
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.82px;
+  color: #9b9b9b;
+}
+
+.blogdetails .p2{
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.82px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.blogdetails .p3{
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.82px;
+  color: #d8d8d8;
 }
